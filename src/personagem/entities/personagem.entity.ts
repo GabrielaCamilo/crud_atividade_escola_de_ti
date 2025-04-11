@@ -1,32 +1,31 @@
 import { IsArray, IsNotEmpty, IsNumber, IsString } from "class-validator";
+import { CreateItemMagicoDto } from "src/item_magico/dto/create-item_magico.dto";
 
-export class CreatePersonagemDto {
+export class Personagem {
 
     @IsNotEmpty()
     @IsNumber()
     id: number;
 
     @IsString()
-    nome: String;
+    nome: string;
 
     @IsString()
-    nomeAventureiro: String;
+    nomeAventureiro: string;
 
     @IsString()
-    classe: String;
+    classe: string;
 
     @IsNumber()
     level: number;
 
     @IsArray()
-    listaItensMagicos: [];
+    listaItensMagicos: CreateItemMagicoDto[] = [];
 
     @IsNumber()
     forca: number;
 
     @IsNumber()
-    defesa: string;
-
-
+    defesa: number;
 
 }

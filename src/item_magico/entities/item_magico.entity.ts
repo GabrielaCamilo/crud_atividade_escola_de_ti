@@ -6,14 +6,16 @@ export class ItemMagico {
         id: number;
     
         @IsString()
-        nome: String;
+        nome: string;
     
         @IsString()
-        tipoItem: String;
+        tipoItem: 'Arma' | 'Armadura' | 'Amuleto';
     
         @IsNumber()
         forca: number;
     
         @IsNumber()
         defesa: number;
+
+        personagemId: number;
 }
