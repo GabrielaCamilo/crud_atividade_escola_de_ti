@@ -40,7 +40,7 @@ npm install @nestjs/swagger swagger-ui-express
 ```
 API link com todos os endpoints
 ```bash
-http://localhost:3000/api#/
+http://localhost:3000/api
 ```
 
 
