@@ -41,7 +41,7 @@ export class PersonagemController {
 
   @HttpCode(HttpStatus.OK)
   @Put('update/:id')
-  @ApiOperation({ summary: 'Update um personagem existente' })
+  @ApiOperation({ summary: 'Atualiza o nome de Aventureiro do personagem' })
   @ApiResponse({ status: 200, description:'Successo'})
   @ApiResponse({status:400, description: 'Bad Request'})
   @ApiResponse({status: 401, description: 'Unauthorized'})
@@ -54,7 +54,7 @@ export class PersonagemController {
 
   @HttpCode(HttpStatus.NO_CONTENT)
   @Delete('delete/:id')
-  @ApiOperation({ summary: 'Delete um personagem pelo Id' })
+  @ApiOperation({ summary: 'Deleta um personagem pelo Id' })
   @ApiResponse({ status: 200, description:'Successo'})
   @ApiResponse({status:400, description: 'Bad Request'})
   @ApiResponse({status: 401, description: 'Unauthorized'})
